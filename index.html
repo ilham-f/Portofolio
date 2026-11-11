@@ -1,212 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moh. Ilham Fahrezy — Web Developer</title>
+  <meta name="description" content="Portfolio of Moh. Ilham Fahrezy, a web developer who builds websites that make life easier for people.">
+  <meta name="theme-color" content="#12180d">
+  <link rel="icon" href="assets/image/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div class="bg-aurora"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-grain"></div>
+  <div class="cursor-glow" id="glow"></div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio | Ilham</title>
-        <link rel="stylesheet" href="assets/css/output.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand">
+      <img src="assets/image/logo.png" alt="Logo">
+      <span>ortfolio<em>.</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a target="_blank" href="assets/Moh. Ilham Fahrezy_CV.pdf" class="btn btn-primary btn-sm">Get my CV <i data-feather="arrow-up-right"></i></a>
+  </nav>
 
-    <body style="background-color: #566e3d;">
-        <section class="pt-8 pb-10 md:pb-10 md:pt-8">
-            <div class="container max-w-screen-xl mx-auto px-4">
-                <nav class="flex items-center justify-between mb-16 md:mb-28">
-                    <div class="flex items-end">
-                        <img style="width: 50px;" src="assets/image/logo.png" alt="Logo">
-                        <span style="margin-left: -9px; margin-bottom: -3px;" class="text-3xl text-white font-normal">ortfolio.</span>
-                    </div>
-                    <a target="_blank" href="assets/Moh. Ilham Fahrezy_CV.pdf" class="px-6 py-2 md:px-8 md:py-3 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Get my CV</a>
-                </nav>
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill reveal-up"><span class="dot"></span> Open to opportunities</div>
+        <h1 class="reveal-up" style="animation-delay:.1s">
+          Hello, I'm<br><span class="serif">Ilham Fahrezy</span>
+        </h1>
+        <div class="role reveal-up" style="animation-delay:.2s">I'm a <span class="typed" id="typed">Web Developer</span></div>
+        <p class="lead reveal-up" style="animation-delay:.3s">
+          I have a passion for web development. I'm actively involved in website development, both on-campus projects and external projects by taking on the role of fullstack developer or backend developer. I enjoy creating websites that make life easier for people.
+        </p>
+        <div class="hero-cta reveal-up" style="animation-delay:.4s">
+          <a target="_blank" href="https://www.linkedin.com/in/ilham-fahrezy-409666250/" class="btn btn-primary">Hire me <i data-feather="arrow-up-right"></i></a>
+          <a href="#projects" class="btn btn-ghost">See my work <i data-feather="arrow-down"></i></a>
+        </div>
+        <div class="hero-stats reveal-up" style="animation-delay:.5s">
+          <div class="stat"><b data-count="7">0</b><span>Projects shipped</span></div>
+          <div class="stat"><b data-count="3" data-suffix="+">0</b><span>Years building</span></div>
+          <div class="stat"><b data-count="10" data-suffix="+">0</b><span>Technologies</span></div>
+        </div>
+      </div>
 
-                <div class="flex flex-col-reverse md:flex-row justify-between items-center text-center md:text-justify">
-                    <div class="md:me-24 mt-8">
-                        <h6 class="font-medium text-white text-lg md:text-2xl mb-2">Hello, it's me</h6>
-                        <h6 class="font-bold text-white text-lg md:text-5xl uppercase mb-4">Moh. Ilham Fahrezy</h6>
-                        <h1 class="font-medium text-white text-2xl md:text-3xl leading-none mb-4">I'm a Web Developer</h1>
-                        <div class="text-justify">
-                            <p class="font-normal text-white text-sm md:text-xl mb-8">I have a passion for web development. I'm actively involved in website development, both on-campus projects and external projects by taking on the role of fullstack developer or backend developer. I enjoy creating website that make life easier for people.</p>
-                        </div>
-                        <a target="_blank" href="https://www.linkedin.com/in/ilham-fahrezy-409666250/" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-white text-black text-sm rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Hire me</a>
-                    </div>
-                    <img class="rounded-full w-[200px] md:w-[450px]" src="assets/image/formal profile pic.png" alt="Image">
-                </div>
-                <hr class="my-24 md:my-36">
-                <div class="text-center">
-                    <span class="text-5xl font-medium text-white">Projects</span>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">Ivas</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Jan 2025</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 65px;" src="assets/image/fastAPI.png" alt="">
-                            <img style="width: 20px;" src="assets/image/react.png" alt="">
-                            <img style="width: 23px; height: 60%;" src="assets/image/python.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            This website is specifically designed to support project management using the Scrum framework, providing tools for sprint planning, backlog management, task tracking, and team collaboration to ensure an efficient and iterative workflow.
-                        </p>
-                        <img class="rounded border" src="assets/image/ivas.png" alt="">
-                        <div class="text-center mt-10">
-                            <span class="font-semibold text-gray-500 text-md relative z-10">Unfortunately this project is private</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">Dinas Kesehatan Jawa Timur Internship</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Aug 2024</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 20px;" src="assets/image/laravel.jpg" alt="">
-                            <img style="width: 19px;" src="assets/image/js.png" alt="">
-                            <img style="width: 28px;" src="assets/image/bootstrap.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            This website is designed to facilitate the online internship registration process for the Dinas Kesehatan Jawa Timur.
-                        </p>
-                        <img class="rounded border" src="assets/image/dinkes.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/ilham-f/Internship" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">TEDxUniversitasAirlangga'23</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Nov 2023</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 20px;" src="assets/image/laravel.jpg" alt="">
-                            <img style="width: 20px;" src="assets/image/react.png" alt="">
-                            <img style="width: 23px; height: 60%;" src="assets/image/tailwindcss.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            This website has the main objective of providing an online ticket and merchandise sales process for the TEDxUniversitasAirlangga event.
-                        </p>
-                        <img class="rounded border" src="assets/image/tedx23.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/ilham-f/TEDxUA2023" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">DonasiYuk!</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Jun 2023</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 20px;" src="assets/image/laravel.jpg" alt="">
-                            <img style="width: 19px;" src="assets/image/js.png" alt="">
-                            <img style="width: 28px;" src="assets/image/bootstrap.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            The website has the main objective of providing a process for creating fundraising programs and making donations online.
-                        </p>
-                        <img class="rounded border" src="assets/image/donasiyuk.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/ilham-f/DonasiYuk" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">Apotech</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Dec 2022</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 20px;" src="assets/image/laravel.jpg" alt="">
-                            <img style="width: 19px;" src="assets/image/js.png" alt="">
-                            <img style="width: 28px;" src="assets/image/bootstrap.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            The website has the main aim of providing an online drug sales and purchase process.
-                        </p>
-                        <img class="rounded border" src="assets/image/apotech.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/ilham-f/Apotech" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">Ham's Seafood</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Dec 2022</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 21px;" src="assets/image/php.png" alt="">
-                            <img style="width: 28px; height: 60%;" src="assets/image/bootstrap.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            This website has the main objective of facilitating the administration process and data management of a seafood restaurant.
-                        </p>
-                        <img class="rounded border" src="assets/image/seafood.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/ilham-f/seafood" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <span class="text-xl md:text-2xl font-semibold">TEDxUniversitasAirlangga'22</span>
-                            <h4 class="font-medium text-gray-500 text-lg">Nov 2022</h4>
-                        </div>
-                        <div class="flex items-center space-x-5 mb-2 mt-2">
-                            <img style="width: 20px;" src="assets/image/laravel.jpg" alt="">
-                            <img style="width: 19px;" src="assets/image/js.png" alt="">
-                            <img style="width: 28px;" src="assets/image/bootstrap.png" alt="">
-                        </div>
-                        <p class="font-normal text-gray-500 text-md mb-4">
-                            This website has the main objective of providing an online ticket and merchandise sales process for the TEDxUniversitasAirlangga event.
-                        </p>
-                        <img class="rounded border" src="assets/image/tedx22.png" alt="">
-                        <div class="text-center mt-10">
-                            <a target="_blank" href="https://github.com/DikaNizzer/tedX" class="font-semibold text-gray-500 hover:text-gray-900 text-md relative z-10">See the GitHub repository here</a>
-                        </div>
-                    </div>
-                </div>
-                <hr class="my-24 md:my-36">
-                <div class="text-center mb-14">
-                    <span class="text-5xl font-medium text-white">Contact</span>
-                </div>
-                <div class="text-center mb-36">
-                    <div class="text-white text-2xl font-normal mb-8">Reach me out on</div>
-                    <div class="flex items-center justify-center space-x-8">
-                        <a href="https://www.linkedin.com/in/ilham-fahrezy-409666250/" class="w-16 h-16 flex items-center justify-center rounded-full bg-white transition ease-in-out duration-500">
-                            <i data-feather="linkedin" class="text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
-    
-                        <a href="mailto:mifahrezy11@gmail.com" class="w-16 h-16 flex items-center justify-center rounded-full bg-white transition ease-in-out duration-500">
-                            <i data-feather="at-sign" class="text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
+      <div class="portrait reveal-up" style="animation-delay:.3s">
+        <div class="ring"></div>
+        <div class="portrait-frame">
+          <img src="assets/image/formal profile pic.png" alt="Moh. Ilham Fahrezy">
+        </div>
+        <div class="float-card one">
+          <div class="ic"><i data-feather="code"></i></div>
+          <div><b>Fullstack</b><small>Frontend · Backend</small></div>
+        </div>
+        <div class="float-card two">
+          <div class="ic"><i data-feather="map-pin"></i></div>
+          <div><b>Indonesia</b><small>Based in</small></div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-                        <a href="https://www.instagram.com/ilhamfrzy/" class="w-16 h-16 flex items-center justify-center rounded-full bg-white transition ease-in-out duration-500">
-                            <i data-feather="instagram" class="text-gray-700 transition ease-in-out duration-500"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <small class="text-white">&copy; Ilham's Portfolio.</small>
-                </div>
-            </div>
-        </section>
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee">
+      <span class="marquee-item">Laravel</span>
+      <span class="marquee-item">React</span>
+      <span class="marquee-item">Vue.js</span>
+      <span class="marquee-item">FastAPI</span>
+      <span class="marquee-item">Python</span>
+      <span class="marquee-item">Tailwind CSS</span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item">PHP</span>
+      <span class="marquee-item">MySQL</span>
+      <span class="marquee-item">Bootstrap</span>
+    </div>
+  </div>
 
-        <script>
-            feather.replace()
-        </script>
-    </body>
+  <!-- ===== ABOUT ===== -->
+  <section class="block" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">About me</div>
+          <h2>Building the web,<br><span class="serif">one useful thing at a time.</span></h2>
+        </div>
+      </div>
+
+      <div class="bento">
+        <div class="card span-4 about-main reveal">
+          <div class="icon"><i data-feather="user"></i></div>
+          <p>I'm <strong>Moh. Ilham Fahrezy</strong>, a web developer who enjoys turning real-world problems into clean, working products — from <strong>ticketing platforms</strong> and <strong>donation systems</strong> to <strong>Scrum project management</strong> tools.</p>
+        </div>
+        <div class="card span-2 accent reveal" data-delay="1">
+          <div class="big-num" data-count="7">0</div>
+          <p>projects shipped across campus organizations, internships and freelance work.</p>
+        </div>
+        <div class="card span-2 reveal" data-delay="1">
+          <div class="icon"><i data-feather="layout"></i></div>
+          <h3>Frontend</h3>
+          <p>Responsive, polished interfaces people enjoy using.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">Vue.js</span><span class="chip">Tailwind</span><span class="chip">Bootstrap</span><span class="chip">JavaScript</span></div>
+        </div>
+        <div class="card span-2 reveal" data-delay="2">
+          <div class="icon"><i data-feather="server"></i></div>
+          <h3>Backend</h3>
+          <p>Reliable APIs and data flows behind the scenes.</p>
+          <div class="chips"><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">FastAPI</span><span class="chip">Python</span></div>
+        </div>
+        <div class="card span-2 reveal" data-delay="3">
+          <div class="icon"><i data-feather="database"></i></div>
+          <h3>Data &amp; Tools</h3>
+          <p>Structured storage and a tidy workflow.</p>
+          <div class="chips"><span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">Scrum</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="block" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Selected work</div>
+          <h2>Featured <span class="serif">projects</span></h2>
+        </div>
+        <p>A collection of websites I've built — from event ticketing to healthcare internship registration.</p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="laravel">Laravel</button>
+        <button class="filter" data-filter="react">React</button>
+        <button class="filter" data-filter="python">Python</button>
+        <button class="filter" data-filter="php">PHP</button>
+      </div>
+
+      <div class="projects">
+        <!-- Ivas (featured) -->
+        <article class="card project featured reveal" data-tags="react python">
+          <div class="thumb"><span class="badge">Latest</span><img src="assets/image/ivas.png" alt="Ivas screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">01</span><span>Jan 2025</span></div>
+            <h3>Ivas</h3>
+            <p>This website is specifically designed to support project management using the Scrum framework, providing tools for sprint planning, backlog management, task tracking, and team collaboration to ensure an efficient and iterative workflow.</p>
+            <div class="stack"><span>FastAPI</span><span>React</span><span>Python</span></div>
+            <span class="project-link private"><i data-feather="lock"></i> Private project</span>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-tags="laravel">
+          <div class="thumb"><img src="assets/image/dinkes.png" alt="Dinas Kesehatan internship screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">02</span><span>Aug 2024</span></div>
+            <h3>Dinas Kesehatan Jawa Timur Internship</h3>
+            <p>This website is designed to facilitate the online internship registration process for the Dinas Kesehatan Jawa Timur.</p>
+            <div class="stack"><span>Laravel</span><span>JavaScript</span><span>Bootstrap</span></div>
+            <a target="_blank" href="https://github.com/ilham-f/Internship" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-delay="1" data-tags="laravel react">
+          <div class="thumb"><img src="assets/image/tedx23.png" alt="TEDxUniversitasAirlangga 2023 screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">03</span><span>Nov 2023</span></div>
+            <h3>TEDxUniversitasAirlangga'23</h3>
+            <p>This website has the main objective of providing an online ticket and merchandise sales process for the TEDxUniversitasAirlangga event.</p>
+            <div class="stack"><span>Laravel</span><span>React</span><span>Tailwind CSS</span></div>
+            <a target="_blank" href="https://github.com/ilham-f/TEDxUA2023" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-tags="laravel">
+          <div class="thumb"><img src="assets/image/donasiyuk.png" alt="DonasiYuk screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">04</span><span>Jun 2023</span></div>
+            <h3>DonasiYuk!</h3>
+            <p>The website has the main objective of providing a process for creating fundraising programs and making donations online.</p>
+            <div class="stack"><span>Laravel</span><span>JavaScript</span><span>Bootstrap</span></div>
+            <a target="_blank" href="https://github.com/ilham-f/DonasiYuk" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-delay="1" data-tags="laravel">
+          <div class="thumb"><img src="assets/image/apotech.png" alt="Apotech screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">05</span><span>Dec 2022</span></div>
+            <h3>Apotech</h3>
+            <p>The website has the main aim of providing an online drug sales and purchase process.</p>
+            <div class="stack"><span>Laravel</span><span>JavaScript</span><span>Bootstrap</span></div>
+            <a target="_blank" href="https://github.com/ilham-f/Apotech" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-tags="php">
+          <div class="thumb"><img src="assets/image/seafood.png" alt="Ham's Seafood screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">06</span><span>Dec 2022</span></div>
+            <h3>Ham's Seafood</h3>
+            <p>This website has the main objective of facilitating the administration process and data management of a seafood restaurant.</p>
+            <div class="stack"><span>PHP</span><span>Bootstrap</span></div>
+            <a target="_blank" href="https://github.com/ilham-f/seafood" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+
+        <article class="card project reveal" data-delay="1" data-tags="laravel">
+          <div class="thumb"><img src="assets/image/tedx22.png" alt="TEDxUniversitasAirlangga 2022 screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="idx">07</span><span>Nov 2022</span></div>
+            <h3>TEDxUniversitasAirlangga'22</h3>
+            <p>This website has the main objective of providing an online ticket and merchandise sales process for the TEDxUniversitasAirlangga event.</p>
+            <div class="stack"><span>Laravel</span><span>JavaScript</span><span>Bootstrap</span></div>
+            <a target="_blank" href="https://github.com/DikaNizzer/tedX" class="project-link"><i data-feather="github"></i> View repository</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="block" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="eyebrow" style="color:var(--green-100)">Contact</div>
+        <h2>Let's build something<br><span class="serif">great together.</span></h2>
+        <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
+        <a href="mailto:mifahrezy11@gmail.com" class="btn btn-primary">mifahrezy11@gmail.com <i data-feather="arrow-up-right"></i></a>
+        <div class="socials">
+          <a class="social" target="_blank" href="https://www.linkedin.com/in/ilham-fahrezy-409666250/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+          <a class="social" href="mailto:mifahrezy11@gmail.com" aria-label="Email"><i data-feather="at-sign"></i></a>
+          <a class="social" target="_blank" href="https://www.instagram.com/ilhamfrzy/" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a class="social" target="_blank" href="https://github.com/ilham-f" aria-label="GitHub"><i data-feather="github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <span>&copy; <span id="year"></span> Ilham's Portfolio. Crafted with care.</span>
+      <a href="#top" class="to-top">Back to top <i data-feather="arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    if (window.feather) feather.replace();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navbar on scroll
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
+
+    // Cursor glow
+    const glow = document.getElementById('glow');
+    addEventListener('pointermove', e => { glow.style.transform = `translate(${e.clientX - 210}px, ${e.clientY - 210}px)`; }, { passive: true });
+
+    // Card spotlight
+    document.querySelectorAll('.card').forEach(c => {
+      c.addEventListener('pointermove', e => {
+        const r = c.getBoundingClientRect();
+        c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+
+    // Duplicate marquee for seamless loop
+    const mq = document.getElementById('marquee');
+    mq.innerHTML += mq.innerHTML;
+
+    // Count-up numbers
+    const countUp = el => {
+      const end = +el.dataset.count, suffix = el.dataset.suffix || '';
+      let start = null;
+      const step = t => {
+        if (!start) start = t;
+        const p = Math.min((t - start) / 1400, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + (p === 1 ? suffix : '');
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        en.target.querySelectorAll?.('[data-count]').forEach(countUp);
+        if (en.target.dataset.count) countUp(en.target);
+        io.unobserve(en.target);
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal, .hero-stats').forEach(el => io.observe(el));
+
+    // Typing role
+    const roles = ['Web Developer', 'Frontend Developer', 'Fullstack Developer', 'Problem Solver'];
+    const typed = document.getElementById('typed');
+    let ri = 0, ci = roles[0].length, deleting = true;
+    const tick = () => {
+      const word = roles[ri];
+      typed.textContent = word.slice(0, ci);
+      if (deleting) { ci--; if (ci < 0) { deleting = false; ri = (ri + 1) % roles.length; ci = 0; } }
+      else { ci++; if (ci > roles[ri].length) { deleting = true; setTimeout(tick, 1800); return; } }
+      setTimeout(tick, deleting ? 45 : 85);
+    };
+    setTimeout(tick, 2200);
+
+    // Project filter
+    document.querySelectorAll('.filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.project').forEach(p => {
+          const show = f === 'all' || p.dataset.tags.split(' ').includes(f);
+          p.classList.toggle('hide', !show);
+          if (show) p.classList.add('in');
+        });
+      });
+    });
+  </script>
+</body>
 </html>
