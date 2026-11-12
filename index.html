@@ -81,22 +81,6 @@
     </div>
   </header>
 
-  <!-- ===== MARQUEE ===== -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track" id="marquee">
-      <span class="marquee-item">Laravel</span>
-      <span class="marquee-item">React</span>
-      <span class="marquee-item">Vue.js</span>
-      <span class="marquee-item">FastAPI</span>
-      <span class="marquee-item">Python</span>
-      <span class="marquee-item">Tailwind CSS</span>
-      <span class="marquee-item">JavaScript</span>
-      <span class="marquee-item">PHP</span>
-      <span class="marquee-item">MySQL</span>
-      <span class="marquee-item">Bootstrap</span>
-    </div>
-  </div>
-
   <!-- ===== ABOUT ===== -->
   <section class="block" id="about">
     <div class="container">
@@ -297,10 +281,6 @@
         c.style.setProperty('--my', (e.clientY - r.top) + 'px');
       });
     });
-
-    // Duplicate marquee for seamless loop
-    const mq = document.getElementById('marquee');
-    mq.innerHTML += mq.innerHTML;
 
     // Count-up numbers
     const countUp = el => {
