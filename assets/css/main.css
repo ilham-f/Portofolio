@@ -82,8 +82,8 @@ a { color: inherit; text-decoration: none; }
   transition: background .4s var(--ease), box-shadow .4s var(--ease);
 }
 .nav.scrolled { background: rgba(18,24,13,.82); box-shadow: 0 10px 40px -10px rgba(0,0,0,.5); }
-.brand { display: flex; align-items: flex-end; gap: 0; font-weight: 600; font-size: 1.25rem; }
-.brand img { width: 30px; }
+.brand { display: flex; align-items: flex-end; gap: 3px; font-weight: 600; font-size: 1.25rem; }
+.brand img { width: 30px; margin-bottom: 5px; }
 .brand span { margin-left: -6px; margin-bottom: -2px; letter-spacing: -.01em; }
 .brand span em { font-style: normal; color: var(--green-300); }
 .nav-links { display: flex; gap: .3rem; list-style: none; }
